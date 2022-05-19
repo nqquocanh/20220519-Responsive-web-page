@@ -52,7 +52,7 @@ body {
 }
 
 /* Mobile: Width < 740px*/
-@media screen and (max-width: 740px) {
+@media screen and (max-width: 739px) {
   img {
     display: none;
   }
@@ -78,8 +78,4 @@ body {
       }
     }
   }
-}
-
-/* Tablet: 740px < Width < 1024px */
-@media screen and (min-width: 740px) and (max-width: 1024px) {
 }
