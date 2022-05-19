@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  .signUp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img {
+      height: 600px;
+      width: 300px;
+      margin-top: 74px;
+    }
+    .container {
+      form {
+        height: 600px;
+        width: 100%;
+        background-color: rgb(127, 255, 165);
+        align-items: center;
+        margin-top: 70px;
+        h1 {
+          font-size: 50px;
+          margin-left: 110px;
+          font-family: sans-serif;
+        }
+        p {
+          font-size: 20px;
+          margin: 10px 0px 10px 30px;
+          font-family: sans-serif;
+        }
+        input {
+          border-radius: 5px;
+          padding: 8px;
+          border: none;
+          margin-left: 75px;
+          width: 60%;
+        }
+        button {
+          margin: 10px 160px;
+          padding: 5px;
+        }
+      }
+    }
+  }
+}
+
+/* Mobile: Width < 740px*/
+@media screen and (max-width: 740px) {
+  img {
+    display: none;
+  }
+  body {
+    margin: 0px;
+    .container {
+      width: 100%;
+      h1 {
+        font-size: 15px;
+        margin-left: 30px;
+      }
+      input {
+        border-radius: 5px;
+        padding: 3px;
+        border: none;
+        margin-left: 15px;
+        width: 60%;
+      }
+      button {
+        margin: 10px 80px;
+        padding: 5px;
+        width: 70px;
+      }
+    }
+  }
+}
+
+/* Tablet: 740px < Width < 1024px */
+@media screen and (min-width: 740px) and (max-width: 1024px) {
+}
