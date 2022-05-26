@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sign-up.css" />
+    <title>Sign Up</title>
+  </head>
+
+  <body>
+    <div class="general">
+      <div class="image">
+        <img
+          src="./image/ngam-bo-hinh-anh-thien-nhien-full-hd-cuc-chat-luong-15.jpg"
+          alt=""
+        />
+      </div>
+      <div class="container">
+        <!-- Sign Up form -->
+        <form action="" class="form1" id="signUpForm">
+          <br />
+          <br />
+          <h1 class="title">Sign Up</h1>
+          <div class="formGroup">
+            <label for="name" class="formInput">Name*</label>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+              class="inputData"
+            />
+            <small class="formMessage"></small>
+          </div>
+          <div class="formGroup">
+            <label for="email" class="formInput">Email*</label>
+            <input
+              id="email"
+              type="text"
+              placeholder="Email"
+              name="email"
+              class="inputData"
+            />
+            <small class="formMessage"></small>
+          </div>
+          <div class="formGroup">
+            <label for="phone" class="formInput">Phone Number</label>
+            <input
+              id="phone"
+              type="text"
+              placeholder="Phone Number"
+              name="phoneNumber"
+              class="inputData"
+            />
+            <small class="formMessage"></small>
+          </div>
+          <div class="formGroup">
+            <label for="password" class="formInput">Password*</label>
+            <input
+              id="password"
+              type="password"
+              placeholder="Password"
+              name="password"
+              class="inputData"
+            />
+            <small class="formMessage"></small>
+          </div>
+          <div class="formGroup">
+            <label for="confirmPassword" class="formInput"
+              >Confirm Password*</label
+            >
+            <input
+              id="confirmPassword"
+              type="password"
+              placeholder="Confirm Password"
+              name="confirmPassword"
+              class="inputData"
+            />
+            <small class="formMessage"></small>
+          </div>
+          <br />
+          <br />
+          <button class="login">SIGN UP</button>
+          <div class="signIn">
+            Already have an account?<a href="./sign-in.html" id="linkSignIn">
+              Sign in</a
+            >
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="./sign-up.js"></script>
+  </body>
+</html>

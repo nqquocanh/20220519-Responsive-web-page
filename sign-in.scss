@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$font: sans-serif;
+$error: red;
+
+body {
+  height: 100%;
+  background-color: #5bc0de;
+  width: 100%;
+  overflow: hidden;
+}
+.general {
+  width: 1000px;
+  height: 650px;
+  margin: 50px auto auto 270px;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
+  .image {
+    flex: 1;
+    img {
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .container {
+    flex: 1;
+    background-color: #e3ebf3;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 40px;
+    .form2 {
+      h1 {
+        font-size: 35px;
+        margin-left: 160px;
+        font-family: $font;
+      }
+      .formGroup2 {
+        width: 100%;
+        margin-top: 10px;
+        .formMessage2 {
+          margin-left: 100px;
+          font-family: $font;
+          font-size: 15x;
+          color: $error;
+        }
+        label {
+          font-size: 15px;
+          margin: 0px 30px 10px 30px;
+          font-family: $font;
+        }
+        input {
+          border-radius: 5px;
+          padding: 6px;
+          margin-left: 70px;
+          margin-top: 5px;
+          width: 70%;
+          border: none;
+          border-bottom: 1px black solid;
+          font-size: 15px;
+        }
+      }
+      button {
+        margin-left: 180px;
+        margin-top: 20px;
+        padding: 12px;
+        border-radius: 10px;
+        border: none;
+        width: 90px;
+        cursor: pointer;
+        background-color: #4b9eb8;
+        font-weight: bold;
+      }
+      .signIn2 {
+        font-family: $font;
+        font-size: 15px;
+        margin-left: 110px;
+        margin-top: 20px;
+        a {
+          cursor: pointer;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+}
+
+.formGroup2 small {
+  margin: 50px 100px 0px 0px;
+  color: red;
+}
+
+/* Mobile: Width < 740px*/
+@media screen and (max-width: 739px) {
+  img {
+    display: none;
+  }
+  body {
+    margin: 0px;
+    .container {
+      width: 300px;
+      h1 {
+        font-size: 15px;
+        margin-left: 30px;
+      }
+      input {
+        border-radius: 5px;
+        padding: 3px;
+        border: none;
+        margin-left: 15px;
+        width: 60%;
+      }
+      button {
+        margin: 10px 80px;
+        padding: 5px;
+        width: 80px;
+      }
+    }
+  }
+}
